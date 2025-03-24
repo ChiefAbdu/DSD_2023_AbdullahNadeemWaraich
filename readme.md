@@ -1,12 +1,12 @@
-# Lab Assigment 5
+# Lab Assigment 7
 ## Task 1
-1. Using a hexadecimal input to get an output on a Seven Segment Display
-2. Creating K-Maps of The 7 segments are finding equations
-3. Creating Circuit Diagrams Using the found equations.
+1. Using flip flops and register to store values to each seven segment.
+2. Assinging each Seven Segment with a value
+3. Make all of the seven segments run simultaneously using a slow clock
 4. Running a simulation and comparing the diagrams.
 5. Finding LUTs Used and IOs Used.
 ## Task 2
-System Verilog Code of the Circuit
-Running a Simulation of The code
-Writing a testbench using tasks
-Running the code on the FGPA
+1. Understand how the rtl works
+2. Create a Diagram of the rtl 
+3. Explain the usage of different components in the rtl
+ 
