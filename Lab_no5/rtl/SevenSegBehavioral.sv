@@ -1,26 +1,8 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 02/23/2025 11:36:18 PM
-// Design Name: 
-// Module Name: SevenSegBehavioral
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
-
-// Behavorial Code
+// =======================================================
+//               Seven Segment Behavioral
+// =======================================================
 
 module SevenSegBehavioral(
         input logic [3:0] num,
@@ -56,6 +38,8 @@ module SevenSegBehavioral(
         DP = 1;//Seg DP
         
         
+        // Equations for Anodes
+
         anode[0] = (sel[2] | sel[1] | sel[0]);
         anode[1] = (sel[2] | sel[1] | ~sel[0]);
         anode[2] = (sel[2] | ~sel[1] | sel[0]);

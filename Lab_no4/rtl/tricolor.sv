@@ -1,12 +1,14 @@
 `timescale 1ns / 1ps
 
 module tricolor(
-    input logic [1:0] a,
-    input logic [1:0] b,
-    output logic red,green,blue 
+    input logic [1:0] a,            // Input A
+    input logic [1:0] b,            // Input B
+    output logic red,green,blue     // Output RGB (LEDs)
 );
 
-    assign red = (a[1] & ~b[0]) | (a[1] & ~b[1]) | (a[0] & a[1]) | (~b[0] & ~b[1]) | (a[0] & ~b[1]);
+    // Equations of Red, Green, Blue derived from K-Maps.
+
+    assign red = (a[1] & ~b[0]) | (a[1] & ~b[1]) | (a[0] & a[1]) | (~b[0] & ~b[1]) | (a[0] & ~b[1]); 
     
     assign blue = (~a[0] & b[0]) | (a[1] & ~b[1]) | (a[0] & ~b[0]) | (~a[1] & b[1]);
 

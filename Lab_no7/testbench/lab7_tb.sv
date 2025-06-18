@@ -1,5 +1,10 @@
 `timescale 1ns / 1ps
 
+// =======================================================
+//  Seven Seg Display (All Anodes On Together) Test Bench
+// =======================================================
+
+
 module lab7_tb;
     
     reg [2:0] sel;
